@@ -54,7 +54,7 @@
 					<li><a href="contactus.html">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a data-toggle="modal" data-target="#loginModal"> <span
+					<li><a id="loginButton" data-toggle="modal"> <span
 							class="glyphicon glyphicon-log-in"></span> Login
 					</a></li>
 				</ul>
@@ -66,7 +66,7 @@
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<button type="button" data-dismiss="modal" class="close">&times;</button>
 					<h4 class="modal-title">Reserve Table</h4>
 				</div>
 				<div class="modal-body">
@@ -399,6 +399,10 @@
 
 			$("#reserveButton").click(function() {
 				$("#reserveModal").modal();
+			});
+			
+			$("#loginButton").click(function() {
+				$("#loginModal").modal();
 			});
 		});
 	</script>
